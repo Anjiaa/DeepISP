@@ -35,13 +35,16 @@ def random_crop(imageX,imageY):
 
 
 # Not used for now
-'''class MSSSIM(Loss):
+'''
+class MSSSIM(Loss):
     
     def random_crop(self,imageX,imageY):
-        '''imgXY = tf.concat([imageX, imageY], axis=3) #BatchxMxNx6
+        '''
+        imgXY = tf.concat([imageX, imageY], axis=3) #BatchxMxNx6
         XY_C = tf.image.random_crop(imgXY, [10,10,2], seed=0) #crop patch from same location
         imgX_C = XY_C[:,:,0]  #split images
-        imgY_C = XY_C[:,:,1]'''
+        imgY_C = XY_C[:,:,1]
+        '''
         #print(imageX.shape)
         #imgX = tf.image.central_crop(imageX,0.002)
         #imgY = tf.image.central_crop(imageX,0.002)
@@ -71,6 +74,7 @@ def random_crop(imageX,imageY):
         print(L.shape)
         print(L)
         #return -1*((1-alpha) * G + alpha * L)
-        return -L'''
+        return -L
+'''
 
     
